@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_bg"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/detail_button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/detail_button_back"
+                android:fontFamily="sans-serif"
+                android:text="Sebuah Nama"
+                android:textAlignment="center"
+                android:textColor="@color/item_title"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/detail_image"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp"
+            tools:src="@tools:sample/avatars"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_username"/>
+
+                <TextView
+                    android:id="@+id/detail_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_username"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_company"/>
+
+                <TextView
+                    android:id="@+id/detail_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_company"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_location"/>
+
+                <TextView
+                    android:id="@+id/detail_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_location"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_repository"/>
+
+                <TextView
+                    android:id="@+id/detail_repository"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_repository"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_follower"/>
+
+                <TextView
+                    android:id="@+id/detail_follower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_follower"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/grey"
+                    android:text="@string/detail_following"/>
+
+                <TextView
+                    android:id="@+id/detail_following"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="@dimen/detail_row_margin"
+                    android:textColor="@color/white"
+                    android:text="@string/detail_following"/>
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
